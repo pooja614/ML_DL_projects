@@ -8,7 +8,7 @@ Project titled 'A Novel Machine learning based Hybrid Model for Webshell Detecti
 NSL-KDD dataset is utliized.
 Django, html, css, bootstrap is used as GUI.  
 
-Buldozer Price Prediction-Regression :
+Buldozer Price Prediction-Regression :<br>
 Project aims at predicting the sales price of bulldozers.
 
 Weather Recognition:
