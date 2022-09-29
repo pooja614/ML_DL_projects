@@ -81,7 +81,7 @@ values.
 - GUI is implemented using HTML, CSS, bootstrap, flask.
 </pre>
 
-### Data Analysis 
+### Data Analysis and Text Analysis 
 Naukri Job Listing 
 <pre>
 * This project aims at exploring the job listing dataset of professional job
@@ -91,5 +91,6 @@ areas as well as the frequency of job postings, insights of high paying job
 roles and monthly trends. Language used, state wise job distributions, top
 job posting companies are analyzed. Average salary trends, insights into
 part time and freelancing sections are explored.
+* Job description is analysed. 
 </pre>
 
