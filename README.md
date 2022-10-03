@@ -69,7 +69,7 @@ Buldozer Price Prediction
 
 Machine Learning Project with GUI  
 <pre>
-In this project, we applied different algorithms to NSL-KDD data set to classify
+This project is based on NSL-KDD dataset, we applied different algorithms to NSL-KDD data set to classify
 normal and anomaly connections. Proposed method is validated by 10 fold cross validation for the
 classification. The Experimental analysis shows that when compared to other classification
 methods, proposed hybrid model have increased the accuracy, precision, recall and f-measure
