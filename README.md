@@ -79,7 +79,18 @@ values.
  Decision Tree, Naïve Bayes Gaussian, Logistic Regression.).
 - Selected models is tuned for hyper parameters and hybrid ensemble is performed.
 - GUI is implemented using HTML, CSS, bootstrap, flask.
+
+The major sections include:
+•	Data folder : It contains dataset for testing purpose. 
+•	Pickle folder: It contains trained model saved in the pickle format.
+•	Static folder: It contains CSS file, images and bootstrap framework. 
+•	Templates folder: HTML templates (index.html and explore.html) is contained. 
+•	app.py file: It is an app object, which is an instance of the Flask object. It will act as the central configuration object for the entire application. It is used to set up pieces of the application required for extended functionality.
+•	model.py file: Saved model is loaded. 
+•	test.py file: It contains logic for testing the dataset whose results are displayed in explore.html 
+
 </pre>
+
 
 ### Data Analysis and Text Analysis 
 Naukri Job Listing 
