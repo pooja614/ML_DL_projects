@@ -105,3 +105,18 @@ part time and freelancing sections are explored.
 * Job description is analysed. 
 </pre>
 
+### Other Projects
+
+### Help-Chat
+
+This is a basic chat app which provides online resources/articles based on the chats and 
+thus enlighten students to deal with their problems. 
+This chat room provides client to client or many client conversation thus third person or 
+host is not involved. It has a reservoir of keywords and associated online link in a csv file. As the keyword is involved in the chat, the clickable link pops up. 
+
+Tools and Platform Used:
+➢ Python
+➢ VS code
+➢ Libraries and Packages Required:
+1. GUI:Tkinter
+2. Socket and threading
