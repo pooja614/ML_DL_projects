@@ -60,6 +60,10 @@ optimal parameters. The model yields 84% accuracy.
 <br>
 </pre>  
 
+Time Series Analysis
+Time series Analysis of Electric Production. 
+Checking for trends, seasonality and converting non-stationary to stationary data after adfuller test. 
+
 Buldozer Price Prediction 
 <pre>
 * Predict the future sale price of a bulldozer, given its characteristics and 
