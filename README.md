@@ -63,7 +63,7 @@ optimal parameters. The model yields 84% accuracy.
 Time Series Analysis
 <pre>
 Time series Analysis of Electric Production. 
-Checking for trends, seasonality and converting non-stationary to stationary data after adfuller test. 
+Checking for trends, seasonality and converting non-stationary to stationary data after Dicky-Fuller test. 
 </pre>
 Buldozer Price Prediction 
 <pre>
