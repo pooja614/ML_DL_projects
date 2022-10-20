@@ -72,6 +72,7 @@ Buldozer Price Prediction
 * Preprocessing, EDA, modelling, feature importance is explored. 
 </pre>
 Fraudulent Transactions. 
+<pre>
  Fraud Detection Model contains following steps:
    -Import and Explore Dataset
    -Remove correlation if there is correlation between unrelated features. 
@@ -82,7 +83,7 @@ Fraudulent Transactions.
    -Apply sampling for class imbalance. 
    -Fit the model to RandomForestClassifier and Logistic Regression. 
    -Visualize and analyse the results. 
-   
+  </pre>
 Machine Learning Project with GUI  
 <pre>
 This project is based on NSL-KDD dataset, we applied different algorithms to NSL-KDD data set to classify
