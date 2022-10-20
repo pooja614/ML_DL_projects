@@ -71,7 +71,18 @@ Buldozer Price Prediction
    previous examples of how much similar bulldozers have been sold for. 
 * Preprocessing, EDA, modelling, feature importance is explored. 
 </pre>
-
+Fraudulent Transactions. 
+ Fraud Detection Model contains following steps:
+   -Import and Explore Dataset
+   -Remove correlation if there is correlation between unrelated features. 
+   -Apply Variable Transformation on the skewed columns. 
+   -Apply onehot encoding on categorical variables
+   -Preserve customer and merchant id information to form additional categorical features. 
+   -Train test split with 80-20 rule. 
+   -Apply sampling for class imbalance. 
+   -Fit the model to RandomForestClassifier and Logistic Regression. 
+   -Visualize and analyse the results. 
+   
 Machine Learning Project with GUI  
 <pre>
 This project is based on NSL-KDD dataset, we applied different algorithms to NSL-KDD data set to classify
@@ -113,7 +124,7 @@ part time and freelancing sections are explored.
 ### Other Projects
 
 ### Help-Chat
-
+<pre>
 This is a basic chat app which provides online resources/articles based on the chats and 
 thus enlighten students to deal with their problems. 
 This chat room provides client to client or many client conversation thus third person or 
@@ -124,4 +135,5 @@ Tools and Platform Used:
 ➢ VS code
 ➢ Libraries and Packages Required:
 1. GUI:Tkinter
-2. Socket and threading
+2. Socket and threading 
+</pre>
