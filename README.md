@@ -63,7 +63,17 @@ optimal parameters. The model yields 84% accuracy.
 Time Series Analysis
 <pre>
 Time series Analysis of Electric Production. 
-Checking for trends, seasonality and converting non-stationary to stationary data after Dicky-Fuller test. 
+- Visualize the data
+- Check for stationarity using rolling statistics and augmented dickey fuller test
+- Convert non stationary to stationary data by applying tranaformation and differencing techniques.
+- find p, d, q using acf, pacf plots
+- Seasonal Decomposition using multiplicative model
+- Find P D Q values of the seasonal components
+- Modelling using SARIMAX
+- Evaluation using MSE, RMSE, MAE.
+- Interpret Residual Diagnostic Plots
+- Interpret Summary Statistics
+- Prediction with future data.
 </pre>
 Buldozer Price Prediction 
 <pre>
