@@ -60,7 +60,7 @@ optimal parameters. The model yields 84% accuracy.
 <br>
 </pre>  
 
-Time Series Analysis
+Time Series Forecasting
 <pre>
 Time series Analysis of Electric Production. 
 - Visualize the data
