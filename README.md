@@ -32,6 +32,16 @@ tuning through parameter search for nodes, number of hidden layers
 and dropout regularization.
 * Stacked bidirectional LSTM yields 80% accuracy. 
 </pre> 
+
+Percentage Matching of string 
+<pre>
+* Data is explored 
+* Null values dropped. 
+* Text Data preprocessing. 
+* String Matching using fuzzywuzzy.
+* Ratio, partial Ratio and top_sort_ratio methods are experimented.  
+* Partial ratio and Token_sort_ratio has given better results. 
+</pre>
 ### Image Classification
 Weather Recognition
 <pre>
