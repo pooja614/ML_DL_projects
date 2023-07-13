@@ -3,8 +3,10 @@ This repository contains personal projects in machine learning and deep learning
 
 
 ### SQL 
-IPL data analysis. 
-Here questions on the data is answered using SQL queries. 
+<pre>
+* IPL data analysis. 
+* Here questions on the data is answered using SQL queries. 
+</pre> 
 ### Natural Language Processing
 Medical Tweets: Topic Modelling
 <pre>
