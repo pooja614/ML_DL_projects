@@ -1,7 +1,10 @@
 # ML_DL_projects 
+This repository contains personal projects in machine learning and deep learning domain.
 
 
-This repository contains personal projects in machine learning and deep learning domain. 
+### SQL 
+IPL data analysis. 
+Here questions on the data is answered using SQL queries. 
 ### Natural Language Processing
 Medical Tweets: Topic Modelling
 <pre>
