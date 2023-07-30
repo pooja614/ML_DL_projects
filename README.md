@@ -6,6 +6,7 @@ This repository contains personal projects in machine learning and deep learning
 <pre>
 * IPL data analysis. 
 * Here questions on the data is answered using SQL queries. 
+*<a href="https://github.com/pooja614/ML_DL_projects/blob/main/SQL_IPL_Data_Analysis.ipynb">link</a>
 </pre> 
 ### Natural Language Processing
 Medical Tweets: Topic Modelling
