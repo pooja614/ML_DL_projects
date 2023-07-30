@@ -72,8 +72,9 @@ boxcox and log transformations. Standard scaler is used for scaling.
 * Decision tree, naive_bayes_guassian, randomforest classifier, Xgb,
 support vector machine etc are searched and random forest is chosen.
 * Hyper parameter tuning using randomizedSearchCV is utilized to choose
-optimal parameters. The model yields 84% accuracy.
+optimal parameters. The model yields 84% accuracy. 
 <br>
+<a href = "https://github.com/pooja614/ML_DL_projects/blob/main/Statistic_Analysis_and_Classification_of_Air_Pollution.ipynb">link</a>
 </pre>  
 
 Time Series Forecasting
