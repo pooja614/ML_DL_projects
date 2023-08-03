@@ -122,7 +122,13 @@ values.
 - Preprocessed data is experimented with different ml models (Naïve Bayes Bernoulli, KNN,
  Decision Tree, Naïve Bayes Gaussian, Logistic Regression.).
 - Selected models is tuned for hyper parameters and hybrid ensemble is performed.
-- GUI is implemented using HTML, CSS, bootstrap, flask.
+- GUI is implemented using HTML, CSS, bootstrap, flask. 
+
+Car Selling Price Prediction 
+   <pre> 
+   <a href='https://github.com/pooja614/CarSelling">github-link</a> 
+      This is a flask application to predict car sales. 
+   </pre>
 
 The major sections include:
 •	Data folder : It contains dataset for testing purpose. 
