@@ -58,5 +58,22 @@ END$$
 
 DELIMITER ; 
 
-CALL LakhQuantity();
+CALL LakhQuantity(); 
+
+<b>9. Procedure to find total sales of the specified year and month</b> 
+   DELIMITER $$
+CREATE PROCEDURE YearlyMonthlySales(year_ INT,  month_ VARCHAR(10))
+BEGIN 
+   SELECT d.year, d.month_name,SUM(t.sales_amount) 
+   FROM transactions as t
+   INNER JOIN date as d
+   ON t.order_date = d.date 
+   WHERE d.year = year_ 
+   AND d.month_name = month_ 
+   GROUP BY d.year, d.month_name;
+END$$ 
+   
+DELIMITER ; 
+   
+CALL YearlyMonthlySales(2018, 'July')
 </pre>
