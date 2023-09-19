@@ -60,7 +60,7 @@ limit 1;
 use sales; 
 
 DELIMITER $$
-CREATE PROCEDURE LakhQuantity()
+CREATE PROCEDURE TenKQuantity()
 BEGIN 
    SELECT *
     FROM transactions
@@ -69,7 +69,7 @@ END$$
 
 DELIMITER ; 
 
-CALL LakhQuantity(); 
+CALL TenKQuantity(); 
 
 <b>10. Procedure to find total sales of the specified year and month</b> 
    DELIMITER $$
