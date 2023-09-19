@@ -1,4 +1,5 @@
 ## Sales Insights by SQL 
+* The data is obtained from codebasics
 <pre>
 use sales; 
 
@@ -104,5 +105,16 @@ group by d.month_name, p.product_code;
 END$$ 
 
 DELIMITER ; 
-CALL totalRevenueProductByMonth('June', 'Prod010')
+CALL totalRevenueProductByMonth('June', 'Prod010') 
+
+<b>12.Create view of products and sales amount that are above average sales amount</b> 
+CREATE VIEW Products_Above_Average_Revenue AS
+SELECT t.product_code, p.product_type, t.sales_amount 
+FROM transactions t 
+INNER JOIN products p
+ON t.product_code = p.product_code
+WHERE t.sales_amount > (
+SELECT AVG(sales_amount) FROM transactions); 
+
+SELECT * from Products_Above_Average_Revenue;
 </pre>
