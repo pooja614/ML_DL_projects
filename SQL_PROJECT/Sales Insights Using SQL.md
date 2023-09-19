@@ -1,5 +1,5 @@
 ## Sales Insights by SQL 
-* The data is obtained from codebasics
+* The data is obtained from codebasics <a src = "https://codebasics.io/resources/sales-insights-data-analysis-project">here</a>
 <pre>
 use sales; 
 
