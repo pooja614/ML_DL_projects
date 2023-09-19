@@ -44,7 +44,18 @@ INNER JOIN date
 on t.order_date = date.date
 group by p.product_type, date.year; 
 
-<b>8. Procedure to find quantity sales greater than ten thousand</b>
+<b>8. Find the product with highest sales in the month of 'June'</b>
+
+select d.month_name as mn, t.product_code as pd, sum(t.sales_amount) as sales
+from transactions t 
+INNER JOIN date d 
+ON t.order_date = d.date
+where d.month_name = 'June'
+group by t.product_code
+order by sales desc 
+limit 1;
+
+<b>9. Procedure to find quantity sales greater than ten thousand</b>
 
 use sales; 
 
@@ -60,7 +71,7 @@ DELIMITER ;
 
 CALL LakhQuantity(); 
 
-<b>9. Procedure to find total sales of the specified year and month</b> 
+<b>10. Procedure to find total sales of the specified year and month</b> 
    DELIMITER $$
 CREATE PROCEDURE YearlyMonthlySales(year_ INT,  month_ VARCHAR(10))
 BEGIN 
@@ -75,5 +86,23 @@ END$$
    
 DELIMITER ; 
    
-CALL YearlyMonthlySales(2018, 'July')
+CALL YearlyMonthlySales(2018, 'July') 
+
+
+<b>11.Procedure to find total revenue of specified product in specified month</b>                                         
+DELIMITER $$ 
+CREATE PROCEDURE TotalRevenueProductByMonth
+(month_ VARCHAR(10), prod_ VARCHAR(10))
+BEGIN  
+SELECT d.month_name, p.product_code, SUM(t.sales_amount) as total_sales from transactions as t
+INNER JOIN products as p 
+ON t.product_code = p.product_code 
+INNER JOIN date as d
+ON t.order_date = d.date 
+where d.month_name = month_ and p.product_code = prod_
+group by d.month_name, p.product_code;
+END$$ 
+
+DELIMITER ; 
+CALL totalRevenueProductByMonth('June', 'Prod010')
 </pre>
