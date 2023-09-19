@@ -2,8 +2,8 @@
 * The data is obtained from codebasics <a href= "https://codebasics.io/resources/sales-insights-data-analysis-project">here</a>
 * The database has the following schema.
  ![sales_schema](https://github.com/pooja614/ML_DL_projects/assets/69869583/f6e3c46f-c4af-4da7-a664-271314ee8035)
-
-
+* The has been explored through SQL queries and procedures.
+* MySQL Workbench is used. 
   
 <pre>
 use sales; 
