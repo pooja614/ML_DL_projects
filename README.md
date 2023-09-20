@@ -1,10 +1,13 @@
 # ML_DL_projects 
 This repository contains personal projects in machine learning and deep learning domain.
 ### PowerBI Study Project 
-<pre> HR Analytics
-   ![HR_data_analytics](https://github.com/pooja614/ML_DL_projects/assets/69869583/ae8d67be-8829-4a60-817e-237b5c376897)
+HR Analytics
+  
+   ![HR_data_analytics](https://github.com/pooja614/ML_DL_projects/assets/69869583/58895fb3-1703-4663-8f56-4d482ac7dd9e)
 
-</pre>
+
+
+
 ### SQL 
 <pre>
 * IPL data analysis. 
