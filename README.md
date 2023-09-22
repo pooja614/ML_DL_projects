@@ -1,21 +1,21 @@
 # ML_DL_projects 
 This repository contains personal projects in machine learning and deep learning domain.
-### PowerBI Study Project 
-HR Analytics
+## PowerBI Study Project 
+### HR Analytics
   
    ![HR_data_analytics](https://github.com/pooja614/ML_DL_projects/assets/69869583/58895fb3-1703-4663-8f56-4d482ac7dd9e)
 
 
 
 
-### SQL 
+## SQL 
 <pre>
 * IPL data analysis. 
 * Here questions on the data is answered using SQL queries. 
 *<a href="https://github.com/pooja614/ML_DL_projects/blob/main/SQL_IPL_Data_Analysis.ipynb">link</a>
 </pre> 
-### Natural Language Processing
-Medical Tweets: Topic Modelling
+## Natural Language Processing
+### Medical Tweets: Topic Modelling
 <pre>
 * NLP based project deals with Topic Modelling of medical tweets.
 * Percentage of different languages is observed and English language
@@ -25,14 +25,14 @@ frequency of words, n-grams is explored.
 * LDA and BERTopic is used for topic modelling. Different visualizations are
 applied.
 </pre>
-Skim Literature
+### Skim Literature
 <pre>
 * Project aims to skim the literature and classify its sections: objective,
 methods, background, results and conclusion.
 * Logistic Regression is used for classification.<br>
 </pre> 
 
-Sentimental Analysis of Book Reviews with Bidirectional
+### Sentimental Analysis of Book Reviews with Bidirectional
 LSTM
 <pre>
 * The project deals with sentimental binary classification of book
@@ -45,7 +45,7 @@ and dropout regularization.
 * Stacked bidirectional LSTM yields 80% accuracy. 
 </pre> 
 
-Percentage Matching of string 
+### Percentage Matching of string 
 <pre>
 * Data is explored 
 * Null values dropped. 
@@ -54,8 +54,8 @@ Percentage Matching of string
 * Ratio, partial Ratio and top_sort_ratio methods are experimented.  
 * Partial ratio and Token_sort_ratio has given better results. 
 </pre>
-### Image Classification
-Weather Recognition
+## Image Classification
+### Weather Recognition
 <pre>
 * This Deep Learning project deals with multiclass classification of weather
 images using CNN.
@@ -67,8 +67,8 @@ is applied, callbacks and early stopping is employed.
 accuracy.
 </pre> 
 
-### Machine Learning
-Air Quality Classification
+## Machine Learning
+### Air Quality Classification
 <pre>
 * Dataset containing reading of different gases in the atmosphere is
 modelled for predicting the air quality.
@@ -83,7 +83,7 @@ optimal parameters. The model yields 84% accuracy.
 <a href = "https://github.com/pooja614/ML_DL_projects/blob/main/Statistic_Analysis_and_Classification_of_Air_Pollution.ipynb">link</a>
 </pre>  
 
-Time Series Forecasting
+### Time Series Forecasting
 <pre>
 Time series Analysis of Electric Production. 
 - Visualize the data
@@ -98,13 +98,13 @@ Time series Analysis of Electric Production.
 - Interpret Summary Statistics
 - Prediction with future data.
 </pre>
-Buldozer Price Prediction 
+### Buldozer Price Prediction 
 <pre>
 * Predict the future sale price of a bulldozer, given its characteristics and 
    previous examples of how much similar bulldozers have been sold for. 
 * Preprocessing, EDA, modelling, feature importance is explored. 
 </pre>
-Fraudulent Transactions. 
+### Fraudulent Transactions. 
 <pre>
  Fraud Detection Model contains following steps:
    -Import and Explore Dataset
@@ -117,7 +117,9 @@ Fraudulent Transactions.
    -Fit the model to RandomForestClassifier and Logistic Regression. 
    -Visualize and analyse the results. 
   </pre>
-Machine Learning Project with GUI  
+## Machine Learning Project with GUI  
+
+### A Novel Machine learning based Hybrid Model for Webshell Detection
 <pre>
 This project is based on NSL-KDD dataset, we applied different algorithms to NSL-KDD data set to classify
 normal and anomaly connections. Proposed method is validated by 10 fold cross validation for the
@@ -129,8 +131,10 @@ values.
  Decision Tree, Naïve Bayes Gaussian, Logistic Regression.).
 - Selected models is tuned for hyper parameters and hybrid ensemble is performed.
 - GUI is implemented using HTML, CSS, bootstrap, flask. 
+Publication: <a href = "https://doi.org/10.22214/ijraset.2021.35644">IJRASET</a> 
+</pre>
 
-Car Selling Price Prediction 
+### Car Selling Price Prediction 
    <pre> 
    <a href='https://github.com/pooja614/CarSelling">github-link</a> 
       This is a flask application to predict car sales. 
@@ -161,7 +165,7 @@ part time and freelancing sections are explored.
 * Job description is analysed. 
 </pre>
 
-### Other Projects
+## Other Projects
 
 ### Help-Chat
 <pre>
