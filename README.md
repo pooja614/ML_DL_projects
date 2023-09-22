@@ -132,6 +132,7 @@ values.
 - Selected models is tuned for hyper parameters and hybrid ensemble is performed.
 - GUI is implemented using HTML, CSS, bootstrap, flask. 
 Publication: <a href = "https://doi.org/10.22214/ijraset.2021.35644">IJRASET</a> 
+  <a href = "nsl_kdd_final_proj">here</a>
 </pre>
 
 ### Car Selling Price Prediction 
