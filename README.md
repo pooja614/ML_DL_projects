@@ -135,11 +135,9 @@ Publication: <a href = "https://doi.org/10.22214/ijraset.2021.35644">IJRASET</a>
 </pre>
 
 ### Car Selling Price Prediction 
-   <pre> 
-   <a href='https://github.com/pooja614/CarSelling">github-link</a> 
-      This is a flask application to predict car sales. 
-   </pre>
 
+ <pre> 
+This is a flask application to predict car sales. 
 The major sections include:
 •	Data folder : It contains dataset for testing purpose. 
 •	Pickle folder: It contains trained model saved in the pickle format.
@@ -148,8 +146,10 @@ The major sections include:
 •	app.py file: It is an app object, which is an instance of the Flask object. It will act as the central configuration object for the entire application. It is used to set up pieces of the application required for extended functionality.
 •	model.py file: Saved model is loaded. 
 •	test.py file: It contains logic for testing the dataset whose results are displayed in explore.html 
+  
 
-</pre>
+
+ </pre>
 
 
 ### Data Analysis and Text Analysis 
