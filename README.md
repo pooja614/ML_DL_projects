@@ -147,7 +147,7 @@ The major sections include:
 •	model.py file: Saved model is loaded. 
 •	test.py file: It contains logic for testing the dataset whose results are displayed in explore.html 
   
-<a href = "https://github.com/pooja614/CarSelling">link</a>
+ <a href = "https://github.com/pooja614/CarSelling">link</a>
 
  </pre>
 
