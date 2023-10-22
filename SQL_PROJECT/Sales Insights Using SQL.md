@@ -6,7 +6,8 @@
 * MySQL Workbench is used. 
 #### 1. What are the different products sold in Chennai? 
 
-![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/93df57e3-3255-428c-b7ac-7ae7d90706f9) 
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/93df57e3-3255-428c-b7ac-7ae7d90706f9)
+...
 
 #### 2. Find the total transactions and total sales in Chennai for different years  
 
