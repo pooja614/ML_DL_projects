@@ -2,6 +2,8 @@
 The project aims at exploring the sales data through SQL. 
 Different questions are answered by SQL queries. 
 */
+
+
 use sales;
 
 /* What are the different products sold in Chennai? */
@@ -12,6 +14,8 @@ INNER JOIN markets m
 ON t.market_code = m.markets_code
 WHERE m.markets_name = 'Chennai';
 
+
+
 /* What are the Top 5 Products sold in Chennai Market? */
 
 SELECT product_code, COUNT(*) as count_of_goods 
@@ -20,6 +24,8 @@ WHERE market_code='Mark001'
 GROUP BY product_code 
 ORDER BY count_of_goods 
 DESC LIMIT 5;
+
+
 
 /* Find the total transactions and total sales in Chennai for different years  */
 
@@ -30,7 +36,10 @@ ON transactions.order_date = date.date
 WHERE transactions.market_code='Mark001'
 GROUP BY date.year;  
 
+
+
 /* Find total sales based on customer type in Chennai year wise */
+
 SELECT date.year, customers.customer_type, SUM(transactions.sales_amount) as total_sales
 FROM transactions
 INNER JOIN customers
@@ -38,6 +47,8 @@ ON transactions.customer_code = customers.customer_code
 INNER JOIN date
 ON transactions.order_date = date.date
 GROUP BY customers.customer_type, date.year; 
+
+
 
 /* Find average sales_amount transactions of 'own brand' and 'distribution.' year wise */  
 
@@ -49,6 +60,8 @@ INNER JOIN date
 on t.order_date = date.date
 group by p.product_type, date.year; 
 
+
+
 /* Find the product with highest sales in the month of 'June' */
 
 select d.month_name as mn, t.product_code as pd, sum(t.sales_amount) as sales
@@ -59,6 +72,8 @@ where d.month_name = 'June'
 group by t.product_code
 order by sales desc 
 limit 1;
+
+
 
 /* Procedure to find quantity sales greater than ten thousand */
 
@@ -73,6 +88,8 @@ END$$
 DELIMITER ; 
 
 CALL TenKQuantity(); 
+
+
 
 /* Procedure to find total sales of the specified year and month */
 
@@ -92,7 +109,10 @@ DELIMITER ;
    
 CALL YearlyMonthlySales(2018, 'July') 
 
+
+	
 /* Procedure to find total revenue of specified product in specified month */
+	
 DELIMITER $$ 
 CREATE PROCEDURE TotalRevenueProductByMonth
 (month_ VARCHAR(10), prod_ VARCHAR(10))
@@ -109,6 +129,8 @@ END$$
 DELIMITER ; 
 CALL totalRevenueProductByMonth('June', 'Prod010')
 
+
+	
 /* Create view of products and sales amount that are above average sales amount */
 
 CREATE VIEW Products_Above_Average_Revenue AS
@@ -121,6 +143,8 @@ WHERE t.sales_amount > (
     ); 
 
 SELECT * from Products_Above_Average_Revenue;
+
+
 
 /* Products and customers with quantity bracket [1000,10000) using
 Common table functions */ 
@@ -143,6 +167,8 @@ FROM cte_qty_brackets
 WHERE qty = 'medium'
 ORDER BY product_code; 
 
+
+
 /* Find Top customers with average sales greater than 10k in south zone. */
 
 SELECT t.market_code,m.markets_name, c.custmer_name, avg(sales_amount) as avg_sales
@@ -158,6 +184,8 @@ where t.market_code IN (
 GROUP BY custmer_name, market_code 
 HAVING avg_sales > 10000;
 
+
+
 /* Find the total and average sales of different customers and total transactions done by the customers.  */ 
 
 SELECT DISTINCT customer_code,
@@ -169,5 +197,6 @@ SELECT DISTINCT customer_code,
 		(partition by customer_code) AS average_sales
 FROM transactions
 WHERE order_date > '2018-12-31';
+
 
 
