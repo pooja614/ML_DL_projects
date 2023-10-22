@@ -57,3 +57,11 @@
 ![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/27497b7b-212c-4364-9740-10c083fa8b62) 
 ...
 
+#### 13. What is the total sales and total number of transactions in different zones?
+
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/97960fbb-2ec7-4803-b304-e7400f3f04c9)
+
+#### 14. How many transactions have taken place across different zones by different customers? 
+
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/f23cc676-5b29-4136-a65d-6709b5c5670d)
+
