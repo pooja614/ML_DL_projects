@@ -200,3 +200,36 @@ WHERE order_date > '2018-12-31';
 
 
 
+/* What is the total sales and total number of transactions in different zones? */
+
+SELECT DISTINCT m.zone,
+	SUM(t.sales_amount) OVER
+		(partition by m.zone) AS zone_sales, 
+	count(t.sales_amount) OVER
+		(partition by m.zone) AS zone_transactions
+	FROM transactions t
+    INNER JOIN markets m
+    ON t.market_code = m.markets_code; 
+    
+   
+   
+/* How many transactions have taken place across different zones by different customers? */
+
+SELECT customer_name, 
+		SUM(tns) AS total_transactions,
+		SUM(CASE WHEN zone = 'Central' THEN tns ELSE '-' END) AS central_transactions,
+        SUM(CASE WHEN zone = 'North' THEN tns ELSE '-' END) AS north_transactions,
+        SUM(CASE WHEN zone = 'South' THEN tns ELSE '-' END) AS south_transactions 
+        FROM (
+			SELECT c.custmer_name as customer_name, m.zone as zone, COUNT(1) as tns
+            FROM transactions t
+            INNER JOIN customers c
+            ON t.customer_code = c.customer_code
+            INNER JOIN markets m 
+            ON t.market_code  = m.markets_code
+            GROUP BY 1,2
+            ) b
+		GROUP BY 1;
+
+
+
