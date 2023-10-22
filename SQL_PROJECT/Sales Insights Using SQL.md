@@ -4,122 +4,55 @@
  ![sales_schema](https://github.com/pooja614/ML_DL_projects/assets/69869583/f6e3c46f-c4af-4da7-a664-271314ee8035)
 * The has been explored through SQL queries and procedures.
 * MySQL Workbench is used. 
-  
-<pre>
-use sales; 
+#### What are the different products sold in Chennai? 
 
-<b>1. Find Total number of customers</b>
-select count(*) from sales.customers;
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/93df57e3-3255-428c-b7ac-7ae7d90706f9) 
 
-<b>2. Show different Markets</b>
-select * from markets;
+#### Find the total transactions and total sales in Chennai for different years  
 
-<b>3. Select distinct products sold in 'Mark001' Chennai. </b>
-select distinct product_code from transactions 
-where market_code='Mark001'; 
-
-<b>4. Find top 5 products sold in Chennai market </b>
-select product_code, count(*) as count_of_goods from sales.transactions
-where market_code='Mark001'
-group by product_code 
-order by count_of_goods desc limit 5;
-
-<b>5. Find total transactions in all years and total sales in Chennai </b>
-select date.year, count(*) as total_transactions, sum(sales_amount) as total_sales FROM transactions 
-INNER JOIN date
-ON transactions.order_date = date.date
-where transactions.market_code='Mark001'
-group by date.year;  
-
-<b>6. Find total sales based on customer type in Chennai year wise</b>
-select date.year, customers.customer_type, sum(transactions.sales_amount) as total_sales
-FROM transactions
-INNER JOIN customers
-ON transactions.customer_code = customers.customer_code
-INNER JOIN date
-on transactions.order_date = date.date
-group by customers.customer_type, date.year; 
-
-<b>7. Find average sales_amount transactions of 'own brand' and 'distribution.' year wise</b>
-
-select date.year, p.product_type, sum(t.sales_amount) as total_sales 
-from transactions as t
-INNER JOIN products as p
-ON t.product_code = p.product_code
-INNER JOIN date
-on t.order_date = date.date
-group by p.product_type, date.year; 
-
-<b>8. Find the product with highest sales in the month of 'June'</b>
-
-select d.month_name as mn, t.product_code as pd, sum(t.sales_amount) as sales
-from transactions t 
-INNER JOIN date d 
-ON t.order_date = d.date
-where d.month_name = 'June'
-group by t.product_code
-order by sales desc 
-limit 1;
-
-<b>9. Procedure to find quantity sales greater than ten thousand</b>
-
-use sales; 
-
-DELIMITER $$
-CREATE PROCEDURE TenKQuantity()
-BEGIN 
-   SELECT *
-    FROM transactions
-    where sales_qty>=10000; 
-END$$
-
-DELIMITER ; 
-
-CALL TenKQuantity(); 
-
-<b>10. Procedure to find total sales of the specified year and month</b> 
-   DELIMITER $$
-CREATE PROCEDURE YearlyMonthlySales(year_ INT,  month_ VARCHAR(10))
-BEGIN 
-   SELECT d.year, d.month_name,SUM(t.sales_amount) 
-   FROM transactions as t
-   INNER JOIN date as d
-   ON t.order_date = d.date 
-   WHERE d.year = year_ 
-   AND d.month_name = month_ 
-   GROUP BY d.year, d.month_name;
-END$$ 
-   
-DELIMITER ; 
-   
-CALL YearlyMonthlySales(2018, 'July') 
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/a58047bf-25b0-47d2-a632-93a4c8ebfa44)
 
 
-<b>11.Procedure to find total revenue of specified product in specified month</b>                                         
-DELIMITER $$ 
-CREATE PROCEDURE TotalRevenueProductByMonth
-(month_ VARCHAR(10), prod_ VARCHAR(10))
-BEGIN  
-SELECT d.month_name, p.product_code, SUM(t.sales_amount) as total_sales from transactions as t
-INNER JOIN products as p 
-ON t.product_code = p.product_code 
-INNER JOIN date as d
-ON t.order_date = d.date 
-where d.month_name = month_ and p.product_code = prod_
-group by d.month_name, p.product_code;
-END$$ 
+#### Find total sales based on customer type in Chennai year wise
 
-DELIMITER ; 
-CALL totalRevenueProductByMonth('June', 'Prod010') 
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/1aa7cb8b-8d43-4d77-b760-2b94a9e31473)
 
-<b>12.Create view of products and sales amount that are above average sales amount</b> 
-CREATE VIEW Products_Above_Average_Revenue AS
-SELECT t.product_code, p.product_type, t.sales_amount 
-FROM transactions t 
-INNER JOIN products p
-ON t.product_code = p.product_code
-WHERE t.sales_amount > (
-SELECT AVG(sales_amount) FROM transactions); 
+#### Find average sales_amount transactions of 'own brand' and 'distribution.' year wise 
 
-SELECT * from Products_Above_Average_Revenue;
-</pre>
+
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/0f74764a-4029-4a91-b165-efd99f877417)
+
+#### Find the product with highest sales in the month of 'June' 
+
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/2ac7bb3a-5f34-4728-96dc-4d021241d96d) 
+
+####  Procedure to find quantity sales greater than ten thousand 
+
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/4ded1553-a49d-473e-ba42-dded7bed4512)
+
+#### Procedure to find total sales of the specified year and month 
+
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/66643b2d-822a-42dd-90f1-28209fd8aed6)
+
+#### Procedure to find total revenue of specified product in specified month
+
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/df0a1e37-cf3d-4e64-8538-fa9b72eda4ae)
+
+#### Create view of products and sales amount that are above average sales amount 
+
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/9248ca98-0075-4338-9e5c-88179eebc692) 
+...
+####  Products and customers with quantity bracket [1000,10000) using Common table functions
+
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/385aa623-54bf-4819-ad80-f484eb71c377)
+...
+#### Find Top customers with average sales greater than 10k in south zone.
+
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/49a64b2e-1f8c-48e8-9da7-c14af1f0f4ce) 
+... 
+
+#### Find the total and average sales of different customers and total transactions done by the customers. 
+
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/27497b7b-212c-4364-9740-10c083fa8b62) 
+...
+
