@@ -51,7 +51,7 @@
 ![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/49a64b2e-1f8c-48e8-9da7-c14af1f0f4ce) 
 ... 
 
-#### Find the total and average sales of different customers and total transactions done by the customers. 
+#### 12. Find the total and average sales of different customers and total transactions done by the customers. 
 
 ![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/27497b7b-212c-4364-9740-10c083fa8b62) 
 ...
