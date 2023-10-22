@@ -4,7 +4,7 @@
  ![sales_schema](https://github.com/pooja614/ML_DL_projects/assets/69869583/f6e3c46f-c4af-4da7-a664-271314ee8035)
 * The has been explored through SQL queries and procedures.
 * MySQL Workbench is used.
-* The SQL queries for the below results are present here <a href = "Sales%20Insights%20USING%20SQL_queries.sql">here</a>
+* The SQL queries for the below results are present <a href = "Sales%20Insights%20USING%20SQL_queries.sql">here</a>
 #### 1. What are the different products sold in Chennai? 
 
 ![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/93df57e3-3255-428c-b7ac-7ae7d90706f9)
