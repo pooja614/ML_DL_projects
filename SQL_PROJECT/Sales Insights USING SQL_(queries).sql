@@ -216,10 +216,10 @@ SELECT DISTINCT m.zone,
 /* How many transactions have taken place across different zones by different customers? */
 
 SELECT customer_name, 
-		SUM(tns) AS total_transactions,
+	SUM(tns) AS total_transactions,
 		SUM(CASE WHEN zone = 'Central' THEN tns ELSE '-' END) AS central_transactions,
-        SUM(CASE WHEN zone = 'North' THEN tns ELSE '-' END) AS north_transactions,
-        SUM(CASE WHEN zone = 'South' THEN tns ELSE '-' END) AS south_transactions 
+        	SUM(CASE WHEN zone = 'North' THEN tns ELSE '-' END) AS north_transactions,
+        	SUM(CASE WHEN zone = 'South' THEN tns ELSE '-' END) AS south_transactions 
         FROM (
 			SELECT c.custmer_name as customer_name, m.zone as zone, COUNT(1) as tns
             FROM transactions t
