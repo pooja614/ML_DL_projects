@@ -1,5 +1,6 @@
 # ML_DL_projects 
-This repository contains personal projects in machine learning and deep learning domain.
+This repository contains personal projects in machine learning and deep learning domain. 
+<a href="https://docs.google.com/spreadsheets/d/1s0_BUKR2XbQGqM9mPLbsf_6Fmfal_6Lh/edit?usp=sharing&ouid=101943031235633755136&rtpof=true&sd=true">SuperStore</a> 
 ## PowerBI Study Project 
 ### HR Analytics
   
