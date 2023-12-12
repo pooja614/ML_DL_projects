@@ -6,6 +6,7 @@
 * MySQL Workbench is used.
 * The SQL queries for the below results are present <a href = "Sales%20Insights%20USING%20SQL_queries.sql">here</a>
 #### 1. What are the different products sold in Chennai? 
+![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/a673dec5-7636-467c-9c23-b741168c7db0)
 
 ![image](https://github.com/pooja614/ML_DL_projects/assets/69869583/93df57e3-3255-428c-b7ac-7ae7d90706f9)
 ...
